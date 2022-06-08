@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="..." />
+    <meta name="author" content="Mohamed Atef Mohamed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <title>Home</title>
+  </head>
+  <body class="position-relative">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">E-Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item fs-5">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid vh-100">
+      <div class="row">
+        <div class="col-md-12 p-0">
+          <div
+            class="slider text-center bg-color position-relative overflow-hidden"
+          >
+            <div class="image vh-100">
+              <img
+                src="images/products/product-1.jpg"
+                class="img-fluid h-100"
+              />
+            </div>
+            <div
+              class="img-info position-absolute start-50 translate-middle-x bg-dark text-white rounded-3"
+            ></div>
+            <div
+              class="buttons position-absolute start-50 translate-middle-x bg-white border rounded-3"
+            >
+              <button class="btn btn-outline-warning m-2" id="previousButton">
+                <i class="fa-solid fa-arrow-left"></i> Previous
+              </button>
+              <button class="btn btn-outline-danger m-2" id="pasueButton">
+                Pause <i class="fa-solid fa-pause"></i>
+              </button>
+              <button class="btn btn-outline-primary m-2" id="continueButton">
+                Continue <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="btn btn-outline-warning m-2" id="nextButton">
+                Next <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="overLayer start-0 end-0 bottom-0 top-0 position-fixed d-none justify-content-center align-items-center"
+        >
+          <div
+            class="image-box w-50 h-50 position-relative d-flex justify-content-between align-items-center p-3"
+          >
+            <i class="fas fa-arrow-alt-circle-left fa-2x"></i>
+            <i class="fas fa-arrow-alt-circle-right fa-2x"></i>
+            <i
+              id="close"
+              class="position-absolute top-0 end-0 fas fa-window-close fa-2x m-3"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <h2 class="fs-2 fw-bold text-center">Holiday Deals</h2>
+
+        <div class="col-md-6">
+          <div
+            class="product-item w-100 p-5 text-white show-left invisible position-relative mb-2"
+          >
+            <h2 class="mt-5">Holiday Deals</h2>
+            <h4 class="fw-bold fs-1">
+              Up to <br />
+              20% off
+            </h4>
+            <p>Selected Headphones Brands</p>
+            <button
+              class="btn bg-white border-white rounded-pill py-1 px-4 mb-5"
+            >
+              Shop
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="product-item w-100 p-5 text-white show-right invisible position-relative mb-2"
+          >
+            <h2 class="mt-5">Holiday Deals</h2>
+            <h4 class="fw-bold fs-1">
+              Up to <br />
+              30% off
+            </h4>
+            <p>Selected Smartphone Brands</p>
+            <button
+              class="btn bg-white border-white rounded-pill py-1 px-4 mb-5"
+            >
+              Shop
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid bg-color">
+        <div class="row justify-content-around">
+          <div class="col-md-5 my-md-3 text-md-start text-sm-center">
+            <div>
+              <p class="fw-bold fs-5">
+                © 2022 by E-Store. Proudly created by Mohamed Atef
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 my-md-3 mb-sm-3">
+            <div class="social text-md-end text-sm-center">
+              <a href="#" title="Twitter"
+                ><i class="fa-brands fa-twitter text-black me-3"></i
+              ></a>
+              <a href="#" title="Facebook"
+                ><i class="fa-brands fa-facebook-f text-black me-3"></i
+              ></a>
+              <a href="#" title="Instagram"
+                ><i class="fa-brands fa-instagram text-black me-3"></i
+              ></a>
+              <a href="#" title="Dribbble">
+                <i class="fa-brands fa-dribbble text-black me-3"></i
+              ></a>
+              <a href="#" title="Pinterest"
+                ><i class="fa-brands fa-pinterest text-black me-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="position-absolute go-top bg-warning rounded-circle d-flex justify-content-center align-items-center"
+    >
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

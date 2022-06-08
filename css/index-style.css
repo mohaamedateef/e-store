@@ -1,0 +1,153 @@
+* {
+  font-family: "segoe ui light";
+}
+
+.bg-color {
+  background-color: #f4f4f4;
+}
+
+.slider .image img {
+  cursor: pointer;
+}
+
+.img-info {
+  bottom: 20%;
+}
+
+.overLayer {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.image-box {
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-box i {
+  cursor: pointer;
+}
+
+.buttons {
+  bottom: 5%;
+  animation: get-up 2s normal;
+}
+
+@keyframes get-up {
+  from {
+    bottom: -20%;
+  }
+  to {
+    bottom: 5%;
+  }
+}
+
+@keyframes get-down {
+  from {
+    top: -20%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+nav.fixed-top {
+  animation: get-down 0.5s normal;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.product-item .btn:hover {
+  background-color: transparent !important;
+  color: white;
+}
+.show-left.product-item {
+  background-image: url("../images/home-1.jpg");
+  background-size: cover;
+  background-position: center center;
+  left: 0%;
+}
+
+@keyframes from-left {
+  0% {
+    left: -200%;
+  }
+  30% {
+    left: -150%;
+  }
+  60% {
+    left: -100%;
+  }
+  900% {
+    left: -50%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.animation-from-left {
+  animation: from-left 1.5s linear normal;
+}
+
+.show-right.product-item {
+  background-image: url("../images/home-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  right: 0%;
+}
+
+@keyframes from-right {
+  0% {
+    right: -200%;
+  }
+  30% {
+    right: -150%;
+  }
+  60% {
+    right: -100%;
+  }
+  900% {
+    right: -50%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+.animation-from-right {
+  animation: from-right 1.5s linear normal;
+}
+
+footer .social i:hover {
+  text-shadow: 0 0 6px gray;
+  transform: scale(1.25);
+}
+
+.caption {
+  background-color: #212529;
+}
+
+.cart {
+  z-index: 3;
+  width: 5%;
+  height: 10%;
+}
+
+.go-top {
+  bottom: 2%;
+  cursor: pointer;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  animation: move-up 1s infinite;
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
